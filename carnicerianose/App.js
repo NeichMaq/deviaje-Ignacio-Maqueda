@@ -1,14 +1,14 @@
 import { useFonts } from "expo-font";
-import ShopNavigator from "./src/navigation/ShopNavigator";
+import BottomTabNavigator from "../algodeaplicacion/src/navigation/BottomTabNavigator";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    Tillana: require("./src/assets/fonts/Tillana-SemiBold.ttf"),
+    Raleway-Italic: require("../algodeaplicacion/src/assets/fonts/Raleway-Italic.ttf"),
   });
 
   if (!fontsLoaded) {
     return null;
   }
 
-  return <ShopNavigator />;
+  return <BottomTabNavigator />;
 }
